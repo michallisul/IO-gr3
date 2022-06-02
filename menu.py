@@ -36,7 +36,7 @@ while True:
                     okno.destroy()
                 okno.geometry("600x200")
                 okno.title('Instrukcja')
-                okno.komunikat = tkinter.Label(text="Aby podskoczyć żółwiem wciśnij SPACJĘ\n\nZa każdą pokonaną przeszkodę otrzymasz punkty!\n\nPowodzenia! ", font= 30)
+                okno.komunikat = tkinter.Label(text="Aby podskoczyć żółwiem wciśnij SZTAŁKĘ W GÓRĘ\n\nZa każdą pokonaną przeszkodę otrzymasz punkty!\n\nPowodzenia! ", font= 30)
                 okno.komunikat.pack(pady=35)
                 cl_but = Button(okno,text='Wszystko jasne!', font= 30, fg='green', command=Close)
                 cl_but.pack()
