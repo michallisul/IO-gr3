@@ -11,7 +11,7 @@ color_dark = (100, 100, 100)
 width = screen.get_width()
 height = screen.get_height()
 smallfont = pygame.font.SysFont('Corbel', 35)
-img2 = pygame.image.load('tlo.png')
+img2 = pygame.image.load('logo.png')
 
 text = smallfont.render('Wyjście', True, color)
 text1 = smallfont.render('Start', True, color)
@@ -42,6 +42,7 @@ while True:
                 cl_but.pack()
                 okno.mainloop()
     screen.fill((60, 115, 60))
+    screen.blit(img2, (150,220))
 
     mouse = pygame.mouse.get_pos()
 
