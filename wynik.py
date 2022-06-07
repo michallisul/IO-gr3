@@ -108,13 +108,13 @@ def highscore(surface, board, your_points):
     high_name, high_score = read_from_file(board)
 
     if your_points > high_score:
-        your_name = enterbox(surface, "YOU HAVE BEATEN THE HIGHSCORE - What is your name?")
+        your_name = enterbox(surface, "Brawo pokanałeś rekord!!! \n Jak masz na imię? ")
     elif your_points == high_score:
-        your_name = enterbox(surface, "YOU HAVE SAME AS HIGHSCORE - What is your name?")
+        your_name = enterbox(surface, "Wow - właśnie wyrównałeś rekord \n Jak masz na imię? ")
     elif your_points < high_score:
-        st1 = "Highscore is "
-        st2 = " made by "
-        st3 = "   What is your name?"
+        st1 = "Rekord to "
+        st2 = " należy do  "
+        st3 = "   Jak masz na imię?"
         txt = st1 + str(high_score) + st2 + high_name + st3
         your_name = enterbox(surface, txt)
 
@@ -122,4 +122,5 @@ def highscore(surface, board, your_points):
         return
     write_to_file(board, your_name, your_points)
     show_top(score, board)
+
     return
