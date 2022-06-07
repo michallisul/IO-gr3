@@ -45,10 +45,10 @@ def replay_or_quit():
             pygame.quit()
             quit()
 
-        elif event.type == pygame.KEYDOWN:
-            continue
+        #elif event.type == pygame.KEYDOWN:
+            #continue
 
-        return event.key
+        #return event.key
     return None
 
 
